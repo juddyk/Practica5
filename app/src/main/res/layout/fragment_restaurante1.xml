@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.juddyreina.oiste.restaurante1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/beige"
+        >
+        <TextView
+            style="@style/TexTitle2"
+            android:text="@string/restaurante_section1"
+            />
+
+
+
+
+    </ScrollView>
+
+</FrameLayout>

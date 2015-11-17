@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:title="   " />
+
+    <item
+        android:title="@string/title_section1"
+        android:id="@+id/item_inicio"
+        android:icon="@drawable/ic_home" />
+
+    <item
+        android:title="@string/title_section2"
+        android:id="@+id/item_cinemas"
+        android:icon="@drawable/ic_cine"/>
+
+    <item
+        android:title="@string/title_section3"
+        android:id="@+id/item_teatros"
+        android:icon="@drawable/ic_teatro"/>
+
+    <item
+        android:title="@string/title_section4"
+        android:id="@+id/item_restaurantes"
+        android:icon="@drawable/ic_restaurante"
+        />
+
+    <item
+        android:title="@string/title_section5"
+        android:id="@+id/item_bares"
+        android:icon="@drawable/ic_rumba"/>
+
+    <item
+        android:title="@string/title_section6"
+        android:id="@+id/item_sitios"
+        android:icon="@drawable/ic_sitios"/>
+</menu>

@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">TuriMedellin</string>
+
+    <string name="title_section1">Inicio</string>
+    <string name="title_section2">Cinemas</string>
+    <string name="title_section3">Teatros</string>
+    <string name="title_section4">Retaurantes</string>
+    <string name="title_section5">Bares/Discotecas</string>
+    <string name="title_section6">Más</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_cine">Cinemas</string>
+    <string name="title_activity_teatro">Teatros</string>
+    <string name="title_activity_bar">Bares</string>
+    <string name="title_activity_comidas">Restaurantes</string>
+    <string name="title_activity_sitios">Sitios</string>
+
+    <string name="cine_section1">Cine Colombia</string>
+    <string name="cine_section2">Procinal</string>
+    <string name="cine_section3">Royal Films</string>
+
+    <string name="teatro_section1">Metropolitano</string>
+    <string name="teatro_section2">Matacandelas</string>
+    <string name="teatro_section3">Pequeño Teatro</string>
+
+    <string name="restaurante_section1">Le Papie</string>
+    <string name="restaurante_section2">Subway</string>
+    <string name="restaurante_section3">il Forno</string>
+
+    <string name="bar_section1">Blue</string>
+    <string name="bar_section2">Rock Café Dalí</string>
+    <string name="bar_section3">Cafe Zeppelin</string>
+
+    <string name="sitios_section1">Parque Arví</string>
+    <string name="sitios_section2">Tierra de Agua</string>
+    <string name="sitios_section3">Parque Explora</string>
+
+    <string name="action_example">Example action</string>
+    <string name="texto">NO SE PU</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello">hello</string>
+    <string name="bye">bye</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="ubicacion">Encuentrenos en:</string>
+    <string name="boleteria">Boletería:    </string>
+    <string name="contacto">Contactenos:</string>
+
+    <string name="teatro">Teatro</string>
+    <string name="contacto">Contactenos</string>
+
+    <string-array name="section_icon">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_cine</item>
+        <item>@drawable/ic_teatro</item>
+        <item>@drawable/ic_restaurante</item>
+        <item>@drawable/ic_rumba</item>
+        <item>@drawable/ic_sitios</item>
+    </string-array>
+
+</resources>
