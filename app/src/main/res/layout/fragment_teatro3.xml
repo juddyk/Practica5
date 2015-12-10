@@ -1,21 +1,66 @@
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" tools:context="com.example.juddyreina.oiste.teatro3">
+    android:layout_height="wrap_content"
+    tools:context="com.example.juddyreina.oiste.teatro1">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/fondo2"
+        android:background="@color/beige"
         >
-        <TextView
-            style="@style/TexTitle"
-            android:text="@string/teatro_section3"
-            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/baseLayout2"
+            >
+            <TextView
+                style="@style/TexSubTitle"
+                android:textSize="30sp"
+                />
+            <TextView
+                style="@style/TexTitle2"
+                android:text="@string/teatro_section3"
+                />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/teatro3"
+                />
+            <TextView
+                style="@style/TexSubTitle"
+                android:text="@string/contacto"
+                />
+            <TextView
+                style="@style/TexSubTitle"
+                android:text=" 239 39 47 | 269 94 18"
+                android:textColor="@color/teal"
+                />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/teatro33"
+                />
+            <TextView
+                style="@style/TexSubTitle"
+                android:text="@string/ubicacion"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="250sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginLeft="10sp"/>
 
+            </LinearLayout>
+        </LinearLayout>
 
     </ScrollView>
 

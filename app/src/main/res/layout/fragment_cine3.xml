@@ -8,11 +8,11 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fondo2"
+        android:background="@color/beige"
         >
 
         <LinearLayout
-            android:layout_marginTop="-8sp"
+            android:layout_marginTop="-15sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/baseLayout2"
@@ -20,12 +20,12 @@
             >
 
             <TextView
-                style="@style/TexTitle"
+                style="@style/TexTitle2"
                 android:text="@string/cine_section3"
                 />
 
             <TextView
-                style="@style/TexSubTitle3"
+                style="@style/TexSubTitle"
                 android:text="@string/boleteria"
                 />
             <LinearLayout
@@ -41,7 +41,7 @@
 
                     >
                     <TextView
-                        style="@style/TexMinTitle3"
+                        style="@style/TexMinTitle"
                         android:layout_marginLeft="8sp"
                         android:text="2D"
 
@@ -50,10 +50,10 @@
                         style="@style/Text"
                         android:layout_marginLeft="20sp"
                         android:text="L-J (no festivos)"
-                        android:textColor="@color/skyblue"
+                        android:textColor="@color/teal"
                         />
                     <TextView
-                        style="@style/TexMinTitle3"
+                        style="@style/TexMinTitle"
                         android:layout_marginLeft="50sp"
                         android:text="$8.000"
                         />
@@ -61,10 +61,10 @@
                         style="@style/Text"
                         android:layout_marginLeft="20sp"
                         android:text="M-W (no festivos)"
-                        android:textColor="@color/skyblue"
+                        android:textColor="@color/teal"
                         />
                     <TextView
-                        style="@style/TexMinTitle3"
+                        style="@style/TexMinTitle"
                         android:layout_marginLeft="50sp"
                         android:text="$4.000"
                         />
@@ -72,10 +72,10 @@
                         style="@style/Text"
                         android:layout_marginLeft="20sp"
                         android:text="V-S-D-Festivos"
-                        android:textColor="@color/skyblue"
+                        android:textColor="@color/teal"
                         />
                     <TextView
-                        style="@style/TexMinTitle3"
+                        style="@style/TexMinTitle"
                         android:layout_marginLeft="50sp"
                         android:text="$9.000"
                         />
@@ -89,7 +89,7 @@
                     >
 
                     <TextView
-                        style="@style/TexMinTitle3"
+                        style="@style/TexMinTitle"
                         android:layout_marginLeft="8sp"
                         android:text="3D"
                         />
@@ -97,10 +97,10 @@
                         style="@style/Text"
                         android:layout_marginLeft="20sp"
                         android:text="L-J (no festivos)"
-                        android:textColor="@color/skyblue"
+                        android:textColor="@color/teal"
                         />
                     <TextView
-                        style="@style/TexMinTitle3"
+                        style="@style/TexMinTitle"
                         android:layout_marginLeft="50sp"
                         android:text="$12.000"
                         />
@@ -108,10 +108,10 @@
                         style="@style/Text"
                         android:layout_marginLeft="20sp"
                         android:text="M-W (no festivos)"
-                        android:textColor="@color/skyblue"
+                        android:textColor="@color/teal"
                         />
                     <TextView
-                        style="@style/TexMinTitle3"
+                        style="@style/TexMinTitle"
                         android:layout_marginLeft="50sp"
                         android:text="$6.000"
                         />
@@ -119,17 +119,17 @@
                         style="@style/Text"
                         android:layout_marginLeft="20sp"
                         android:text="V-S-D-Festivos"
-                        android:textColor="@color/skyblue"
+                        android:textColor="@color/teal"
                         />
                     <TextView
-                        style="@style/TexMinTitle3"
+                        style="@style/TexMinTitle"
                         android:layout_marginLeft="50sp"
                         android:text="$13.000"
                         />
                 </LinearLayout>
             </LinearLayout>
             <TextView
-                style="@style/TexSubTitle3"
+                style="@style/TexSubTitle"
                 android:text="@string/ubicacion"
                 />
 
@@ -138,48 +138,23 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 >
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="250sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginLeft="10sp"/>
 
-                <LinearLayout
-                    android:layout_marginLeft="10sp"
-                    android:layout_width="@dimen/window"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-                    <TextView
-                        style="@style/TexMinTitle3"
-                        android:layout_gravity="left"
-                        android:text="Jumbo La 65"
-                        />
-                    <TextView
-                        style="@style/TexMinTitle3"
-                        android:layout_gravity="left"
-                        android:text="CC Premium Plaza"
-                        />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="@dimen/window"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-                    <TextView
-                        style="@style/TexMinTitle3"
-                        android:layout_gravity="left"
-                        android:text="CC Bosque Plaza"
-                        />
-                </LinearLayout>
             </LinearLayout>
             <TextView
-                style="@style/TexSubTitle3"
+                style="@style/TexSubTitle"
                 android:text="@string/contacto"
                 />
             <TextView
-                style="@style/TexMinTitle3"
+                style="@style/TexMinTitle"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="Telefono: 605 15 87"
-                android:textColor="@color/skyblue"
                 />
 
 

@@ -19,23 +19,13 @@ public class TabBar extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        /**
-         *Inflate tab_layout and setup Views.
-         */
+
         View x =  inflater.inflate(R.layout.tab_bar,null);
         tabLayout = (TabLayout) x.findViewById(R.id.tabs);
         viewPager = (ViewPager) x.findViewById(R.id.viewpager);
 
-        /**
-         *Set an Apater for the View Pager
-         */
         viewPager.setAdapter(new MyAdapter(getChildFragmentManager()));
 
-        /**
-         * Now , this is a workaround ,
-         * The setupWithViewPager dose't works without the runnable .
-         * Maybe a Support Library Bug .
-         */
 
         tabLayout.post(new Runnable() {
             @Override
@@ -54,10 +44,6 @@ public class TabBar extends Fragment {
 
             super(fm);
         }
-
-        /**
-         * Return fragment with respect to Position .
-         */
 
         @Override
         public Fragment getItem(int position)

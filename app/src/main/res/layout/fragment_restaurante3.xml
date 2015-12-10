@@ -9,12 +9,46 @@
         android:layout_height="wrap_content"
         android:background="@color/beige"
         >
-        <TextView
-            style="@style/TexTitle2"
-            android:textStyle="italic|bold"
-            android:text="@string/restaurante_section3"
-            />
+        <LinearLayout
+            android:layout_marginTop="70sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/baseLayout2"
+            >
+            <TextView
+                style="@style/TexTitle2"
+                android:text="@string/restaurante_section3"
+                />
 
+            <TextView
+                style="@style/TexTitle2"
+                android:textSize="50sp"
+                />
+
+            <TextView
+                style="@style/TexSubTitle"
+                android:text="@string/ubicacion"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="250sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginLeft="10sp"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/TexSubTitle"
+                android:text="@string/contacto"
+                />
+
+        </LinearLayout>
     </ScrollView>
 
 

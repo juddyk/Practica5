@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">TuriMedellin</string>
-
     <string name="title_section1">Inicio</string>
     <string name="title_section2">Cinemas</string>
     <string name="title_section3">Teatros</string>
@@ -24,14 +23,14 @@
     <string name="teatro_section3">Pequeño Teatro</string>
 
     <string name="restaurante_section1">Le Papie</string>
-    <string name="restaurante_section2">Subway</string>
+    <string name="restaurante_section2">Milagros</string>
     <string name="restaurante_section3">il Forno</string>
 
     <string name="bar_section1">Blue</string>
     <string name="bar_section2">Rock Café Dalí</string>
-    <string name="bar_section3">Cafe Zeppelin</string>
+    <string name="bar_section3">3Cordilleras</string>
 
-    <string name="sitios_section1">Parque Arví</string>
+    <string name="sitios_section1">Pueblito Paisa</string>
     <string name="sitios_section2">Tierra de Agua</string>
     <string name="sitios_section3">Parque Explora</string>
 
@@ -45,9 +44,9 @@
     <string name="ubicacion">Encuentrenos en:</string>
     <string name="boleteria">Boletería:    </string>
     <string name="contacto">Contactenos:</string>
-
-    <string name="teatro">Teatro</string>
-    <string name="contacto">Contactenos</string>
+    <string name="tour">Tour Cervecero</string>
+    <string name="tourH">Jueves de 5:30 a 9:00 p.m</string>
+    <string name="tourP">21.000</string>
 
     <string-array name="section_icon">
         <item>@drawable/ic_home</item>
@@ -57,5 +56,7 @@
         <item>@drawable/ic_rumba</item>
         <item>@drawable/ic_sitios</item>
     </string-array>
+
+    <string name="title_activity_maps">Map</string>
 
 </resources>
