@@ -3,53 +3,65 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context="com.example.juddyreina.oiste.restaurante3">
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         android:background="@color/beige"
         >
-        <LinearLayout
-            android:layout_marginTop="70sp"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/baseLayout2"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
             >
-            <TextView
-                style="@style/TexTitle2"
-                android:text="@string/restaurante_section3"
-                />
-
-            <TextView
-                style="@style/TexTitle2"
-                android:textSize="50sp"
-                />
-
-            <TextView
-                style="@style/TexSubTitle"
-                android:text="@string/ubicacion"
-                />
-
             <LinearLayout
+                android:layout_marginTop="290sp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                style="@style/baseLayout2"
                 >
-                <com.google.android.gms.maps.MapView
-                    android:id="@+id/map"
-                    android:layout_width="match_parent"
-                    android:layout_height="250sp"
-                    android:layout_marginRight="10sp"
-                    android:layout_marginLeft="10sp"/>
+                <TextView
+                    style="@style/TexTitle2"
+                    android:text="@string/restaurante_section3"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/planet"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/planet1"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/planet3"
+                    />
+                <TextView
+                    style="@style/TexSubTitle"
+                    android:text="@string/contacto"
+                    />
+                <TextView
+                    style="@style/TexSubTitle2"
+                    android:text="313 88 30"
+                    />
+
             </LinearLayout>
+        </ScrollView>
 
-            <TextView
-                style="@style/TexSubTitle"
-                android:text="@string/contacto"
-                />
+        <TextView
+            style="@style/TexSubTitle"
+            android:text="@string/ubicacion"
+            />
 
-        </LinearLayout>
-    </ScrollView>
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:layout_weight="1"/>
 
+    </LinearLayout>
 
 </FrameLayout>

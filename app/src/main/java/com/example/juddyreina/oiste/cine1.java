@@ -34,6 +34,9 @@ public class cine1 extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v= inflater.inflate(R.layout.fragment_cine1, container, false);
+        double a=(6.232723+6.2406758+6.2081491+6.1998158+6.2001107)/5;
+        double b=(-75.6034859-75.586198-75.563652-75.5756559-75.576092)/5;
+        final LatLng posC= new LatLng(a,b);
 
         mMapView = (MapView) v.findViewById(R.id.map);
         mMapView.onCreate(savedInstanceState);
@@ -56,7 +59,7 @@ public class cine1 extends Fragment{
         googleMap.addMarker(marker5.title("CINE COLOMBIA").snippet("Oviedo").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_cine)));
 
         CameraPosition cameraPosition = new CameraPosition.Builder()
-                .target(posCine2).zoom(13).build();
+                .target(posC).zoom(12).build();
         googleMap.animateCamera(CameraUpdateFactory
                 .newCameraPosition(cameraPosition));
         googleMap.setMyLocationEnabled(true);

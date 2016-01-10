@@ -4,63 +4,69 @@
     android:layout_height="wrap_content"
     tools:context="com.example.juddyreina.oiste.teatro1">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         android:background="@color/beige"
         >
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/baseLayout2"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+
             >
-            <TextView
-                style="@style/TexTitle2"
-                android:text="@string/bar_section1"
-                />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bar1"
-                />
-            <TextView
-                style="@style/TexSubTitle"
-                android:text="@string/contacto"
-                />
-            <TextView
-                style="@style/TexSubTitle"
-                android:text="266 30 47 | 318 476 01 01"
-                android:textColor="@color/teal"
-                />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bar11"
-                />
-            <TextView
-                style="@style/TexSubTitle"
-                android:text="@string/ubicacion"
-                />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                style="@style/baseLayout2"
                 >
-                <com.google.android.gms.maps.MapView
-                    android:id="@+id/map"
-                    android:layout_width="match_parent"
-                    android:layout_height="250sp"
-                    android:layout_marginRight="10sp"
-                    android:layout_marginLeft="10sp"/>
+                <TextView
+                    style="@style/TexSubTitle"
+                    android:textSize="100sp"
+                    />
+                <TextView
+                    style="@style/TexTitle2"
+                    android:text="@string/bar_section1"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bar1"
+                    />
+                <TextView
+                    style="@style/TexSubTitle"
+                    android:text="@string/contacto"
+                    />
+                <TextView
+                    style="@style/TexSubTitle"
+                    android:text="266 30 47 | 318 476 01 01"
+                    android:textColor="@color/teal"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bar11"
+                    />
+
 
             </LinearLayout>
 
-        </LinearLayout>
+        </ScrollView>
 
-    </ScrollView>
+        <TextView
+            style="@style/TexSubTitle"
+            android:text="@string/ubicacion"
+            />
 
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
 
 </FrameLayout>

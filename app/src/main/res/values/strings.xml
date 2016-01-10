@@ -24,7 +24,7 @@
 
     <string name="restaurante_section1">Le Papie</string>
     <string name="restaurante_section2">Milagros</string>
-    <string name="restaurante_section3">il Forno</string>
+    <string name="restaurante_section3">Planet Comics</string>
 
     <string name="bar_section1">Blue</string>
     <string name="bar_section2">Rock Café Dalí</string>
@@ -47,7 +47,7 @@
     <string name="tour">Tour Cervecero</string>
     <string name="tourH">Jueves de 5:30 a 9:00 p.m</string>
     <string name="tourP">21.000</string>
-
+    <string name="sitio2_text">Tu lo llamas vacaciones, nosotros vida</string>
     <string-array name="section_icon">
         <item>@drawable/ic_home</item>
         <item>@drawable/ic_cine</item>

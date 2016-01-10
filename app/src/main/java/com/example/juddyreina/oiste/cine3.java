@@ -16,8 +16,9 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class cine3 extends Fragment {
-    static final LatLng posCine1 = new LatLng(6.232723,-75.6034859);//MONTERREY
-    static final LatLng posCine2 = new LatLng(6.2406758,-75.586198);//FLORIDA
+    static final LatLng posCine1 = new LatLng(6.2521168,-75.5875565);//JUMBO
+    static final LatLng posCine2 = new LatLng(6.2406758,-75.586198);//BOSQUE PLAZA
+    static final LatLng posCine3 = new LatLng(6.2310509,-75.5723843);//PREMIUM PLAZA
 
     MapView mMapView;
     private GoogleMap googleMap;
@@ -25,7 +26,10 @@ public class cine3 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v= inflater.inflate(R.layout.fragment_cine2, container, false);
+        View v= inflater.inflate(R.layout.fragment_cine3, container, false);
+        double a=(6.2521168+6.2406758+6.2310509)/3;
+        double b=(-75.5875565-75.586198-75.5723843)/3;
+        final LatLng posC= new LatLng(a,b);
 
         mMapView = (MapView) v.findViewById(R.id.map);
         mMapView.onCreate(savedInstanceState);
@@ -40,9 +44,11 @@ public class cine3 extends Fragment {
         googleMap.addMarker(marker1.title("ROYAL FILMS").snippet("Jumbo 65").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_cine)));
         MarkerOptions marker2 = new MarkerOptions().position(posCine2).title("ROYAL FILMS");
         googleMap.addMarker(marker2.title("ROYAL FILMS").snippet("Bosque Plaza").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_cine)));
+        MarkerOptions marker3 = new MarkerOptions().position(posCine3).title("ROYAL FILMS");
+        googleMap.addMarker(marker3.title("ROYAL FILMS").snippet("Bosque Plaza").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_cine)));
 
         CameraPosition cameraPosition = new CameraPosition.Builder()
-                .target(posCine2).zoom(13).build();
+                .target(posC).zoom(13).build();
         googleMap.animateCamera(CameraUpdateFactory
                 .newCameraPosition(cameraPosition));
         googleMap.setMyLocationEnabled(true);

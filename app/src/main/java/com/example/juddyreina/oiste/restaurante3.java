@@ -16,8 +16,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class restaurante3 extends Fragment {
-    static final LatLng posCine1 = new LatLng(6.232723,-75.6034859);//MONTERREY
-    static final LatLng posCine2 = new LatLng(6.2406758,-75.586198);//FLORIDA
+    static final LatLng pos1 = new LatLng(6.197929,-75.5765434);
 
     MapView mMapView;
     private GoogleMap googleMap;
@@ -36,13 +35,11 @@ public class restaurante3 extends Fragment {
             e.printStackTrace();
         }
         googleMap = mMapView.getMap();
-        MarkerOptions marker1 = new MarkerOptions().position(posCine1).title("IL FORNO");
-        googleMap.addMarker(marker1.title("IL FORNO").snippet("Molinos").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_restaurante)));
-        MarkerOptions marker2 = new MarkerOptions().position(posCine2).title("IL FORNO");
-        googleMap.addMarker(marker2.title("IL FORNO").snippet("nn").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_restaurante)));
+        MarkerOptions marker1 = new MarkerOptions().position(pos1).title("PLANET COMICS");
+        googleMap.addMarker(marker1.title("PLANET COMICS").snippet("CC Santa Fe").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_restaurante)));
 
         CameraPosition cameraPosition = new CameraPosition.Builder()
-                .target(posCine2).zoom(13).build();
+                .target(pos1).zoom(15).build();
         googleMap.animateCamera(CameraUpdateFactory
                 .newCameraPosition(cameraPosition));
         googleMap.setMyLocationEnabled(true);

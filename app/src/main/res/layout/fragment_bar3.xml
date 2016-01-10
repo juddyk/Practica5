@@ -4,78 +4,84 @@
     android:layout_height="wrap_content"
     tools:context="com.example.juddyreina.oiste.teatro1">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         android:background="@color/beige"
         >
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/baseLayout2"
-            >
-            <TextView
-                style="@style/TexSubTitle"
-                android:textSize="30sp"
-                />
-            <TextView
-                style="@style/TexTitle2"
-                android:text="@string/bar_section3"
-                />
+            android:layout_height="match_parent"
+            android:layout_weight="2"
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bar3"
-                />
-            <TextView
-                style="@style/TexSubTitle"
-                android:text="@string/tour"
-                />
-            <TextView
-                style="@style/TexSubTitle"
-                android:text="@string/tourH"
-                android:textColor="@color/teal"
-                />
-            <TextView
-                style="@style/TexSubTitle"
-                android:text="@string/tourP"
-                android:textColor="@color/teal"
-                />
-            <TextView
-                style="@style/TexSubTitle"
-                android:text="@string/contacto"
-                />
-            <TextView
-                style="@style/TexSubTitle"
-                android:text="444 23 37"
-                android:textColor="@color/teal"
-                />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bar33"
-                />
-            <TextView
-                style="@style/TexSubTitle"
-                android:text="@string/ubicacion"
-                />
+            >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                style="@style/baseLayout2"
                 >
-                <com.google.android.gms.maps.MapView
-                    android:id="@+id/map"
-                    android:layout_width="match_parent"
-                    android:layout_height="250sp"
-                    android:layout_marginRight="10sp"
-                    android:layout_marginLeft="10sp"/>
+                <TextView
+                    style="@style/TexSubTitle"
+                    android:textSize="100sp"
+                    />
+                <TextView
+                    style="@style/TexSubTitle"
+                    android:textSize="30sp"
+                    />
+                <TextView
+                    style="@style/TexTitle2"
+                    android:text="@string/bar_section3"
+                    />
 
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bar3"
+                    />
+                <TextView
+                    style="@style/TexSubTitle"
+                    android:text="@string/tour"
+                    />
+                <TextView
+                    style="@style/TexSubTitle"
+                    android:text="@string/tourH"
+                    android:textColor="@color/teal"
+                    />
+                <TextView
+                    style="@style/TexSubTitle"
+                    android:text="@string/tourP"
+                    android:textColor="@color/teal"
+                    />
+                <TextView
+                    style="@style/TexSubTitle"
+                    android:text="@string/contacto"
+                    />
+                <TextView
+                    style="@style/TexSubTitle"
+                    android:text="444 23 37"
+                    android:textColor="@color/teal"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bar33"
+                    />
             </LinearLayout>
-        </LinearLayout>
 
-    </ScrollView>
+        </ScrollView>
 
+        <TextView
+            style="@style/TexSubTitle"
+            android:text="@string/ubicacion"
+            />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
 
 </FrameLayout>

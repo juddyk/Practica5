@@ -16,7 +16,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class bar1 extends Fragment {
-    static final LatLng posCine1 = new LatLng(6.232723,-75.6034859);//MONTERREY
+    static final LatLng pos1 = new LatLng(6.2097863,-75.5703629);//MONTERREY
 
     MapView mMapView;
     private GoogleMap googleMap;
@@ -35,10 +35,10 @@ public class bar1 extends Fragment {
             e.printStackTrace();
         }
         googleMap = mMapView.getMap();
-        MarkerOptions marker1 = new MarkerOptions().position(posCine1).title("BLUE");
+        MarkerOptions marker1 = new MarkerOptions().position(pos1).title("BLUE");
         googleMap.addMarker(marker1.title("BLUE").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_rumba)));
         CameraPosition cameraPosition = new CameraPosition.Builder()
-                .target(posCine1).zoom(15).build();
+                .target(pos1).zoom(15).build();
         googleMap.animateCamera(CameraUpdateFactory
                 .newCameraPosition(cameraPosition));
         googleMap.setMyLocationEnabled(true);
