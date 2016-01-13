@@ -16,7 +16,7 @@
 
             >
             <LinearLayout
-                android:layout_marginTop="210sp"
+                android:layout_marginTop="50sp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 style="@style/baseLayout2"
@@ -29,16 +29,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/pueblito3"
-                    />
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/pueblito2"
-                    />
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/pueblito"
                     />
             </LinearLayout>
         </ScrollView>

@@ -48,12 +48,6 @@
                     android:text="581 49 44"
                     android:textColor="@color/teal"
                     />
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bar22"
-                    />
-
             </LinearLayout>
 
         </ScrollView>

@@ -29,11 +29,10 @@
                     style="@style/TexTitle2"
                     android:text="@string/teatro_section3"
                     />
-
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/teatro3"
+                    android:background="@drawable/teatro33"
                     />
                 <TextView
                     style="@style/TexSubTitle"
@@ -43,12 +42,6 @@
                     style="@style/TexSubTitle"
                     android:text=" 239 39 47 | 269 94 18"
                     android:textColor="@color/teal"
-                    />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/teatro33"
                     />
             </LinearLayout>
 

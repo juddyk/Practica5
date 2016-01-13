@@ -29,11 +29,10 @@
                     style="@style/TexTitle2"
                     android:text="@string/bar_section1"
                     />
-
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bar1"
+                    android:background="@drawable/bar11"
                     />
                 <TextView
                     style="@style/TexSubTitle"
@@ -44,14 +43,6 @@
                     android:text="266 30 47 | 318 476 01 01"
                     android:textColor="@color/teal"
                     />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bar11"
-                    />
-
-
             </LinearLayout>
 
         </ScrollView>

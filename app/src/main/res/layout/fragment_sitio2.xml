@@ -15,7 +15,7 @@
             android:layout_weight="2"
             >
             <LinearLayout
-                android:layout_marginTop="200sp"
+                android:layout_marginTop="160sp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 style="@style/baseLayout2"
@@ -24,34 +24,19 @@
                     style="@style/TexTitle2"
                     android:text="@string/sitios_section2"
                     />
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/tierraagua"
-                    />
                 <TextView
                     android:gravity="center"
                     style="@style/TexMinTitle"
                     android:text="@string/sitio2_text"
                     />
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="300sp"
+                    android:layout_height="300sp"
                     android:background="@drawable/tierragua1"
-                    />
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/tierragua2"
                     />
                 <TextView
                     style="@style/TexSubTitle"
                     android:text="@string/contacto"
-                    />
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/tierraagua3"
                     />
                 <TextView
                     style="@style/TexSubTitle2"

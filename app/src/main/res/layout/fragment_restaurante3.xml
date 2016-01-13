@@ -15,7 +15,7 @@
             android:layout_weight="2"
             >
             <LinearLayout
-                android:layout_marginTop="290sp"
+                android:layout_marginTop="70sp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 style="@style/baseLayout2"
@@ -28,16 +28,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/planet"
-                    />
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/planet1"
-                    />
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/planet3"
                     />
                 <TextView
                     style="@style/TexSubTitle"
